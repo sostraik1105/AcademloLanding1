@@ -24,6 +24,17 @@ body{
     font-size: .9rem;
 }
 
+h1,
+h2{
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+
+
+.flex{display: flex;}
+.container{height: var(--window-size);}
+
 /* Inicio de la rama INICIO */
 
 #container-initial1{
@@ -36,7 +47,6 @@ body{
 }
 
 h1{
-    font-family: 'Poppins';
     font-weight: 700;
     color: var(--very-dark-cyan)
 
@@ -94,6 +104,48 @@ h1{
 .second-block{
     margin: 2.5rem 0;
 }
+
+/*PANEL1*/
+.grow{
+    flex-direction: column;
+    background-color: #F6FBFF;
+}
+
+.grow>img{
+    background-color: #fff;
+}
+
+.grow>div>img,
+.flowing>div>img{
+    width:80%;
+    position: relative;
+    left: 10%;
+}
+
+.grow>div,
+.flowing>div{
+    position:relative;
+    top: 10%;
+}
+
+.flowing{
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.grow>div>div>h2,
+.flowing>div>div>h2{
+    padding: 2rem;
+}
+
+.grow>div>div>p,
+.flowing>div>div>p{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    left: 10%;
+}
+
 
  /* INICIO RESPONSIV */
 @media only screen and ( min-width: 600px ){
@@ -235,3 +287,5 @@ h1{
 
 
 } 
+
+
