@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 :root{
     --pink: hsl(322, 100%, 66%);
@@ -13,13 +14,9 @@
 *{
     padding: 0;
     margin: 0;
-}
-
-*,
-*::after,
-*::before{
     box-sizing: border-box;
 }
+
 
 body{
     background-color: #fff;
@@ -27,28 +24,214 @@ body{
     font-size: .9rem;
 }
 
-h1,
-h2 {
-    font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
+/* Inicio de la rama INICIO */
+
+#container-initial1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    padding: 1rem 0.5rem;
+    margin: 2.5rem 1.5rem;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: var(--very-dark-cyan)
+
+}
+
+.main-text>p{
+    margin: 1.5rem 0 2rem 0;
+    font-weight: 400;
     color: var(--very-dark-cyan)
 }
 
-a{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+.botton-rosa{
+    display: inline-block;
+    background-color: var(--pink);
+    color: #fff;
+    padding: .7rem 2rem;
+    margin: 1rem;
+    border-radius: 3.4rem;
+    font-size: .8rem;
 }
 
-ul {
-    list-style: none;
+.initial-image{
+    margin-left: 3rem;
 }
 
-img{
-    width: 100%;
+#container-initial2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  3.5rem 0;
 }
 
-p{
+#container-initial2 img{
+    width: 2rem;
+}
+
+#container-initial2 .big-number{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+#container-initial2 .small-text-block{
+    font-size: 1rem ;
     color: var(--very-dark-cyan);
+    padding-top: .3rem;
+    padding-left: 1rem;
+    opacity: .8;
 }
+
+.first-block{
+    margin-bottom: 3rem;
+}
+
+.second-block{
+    margin: 2.5rem 0;
+}
+
+ /* INICIO RESPONSIV */
+@media only screen and ( min-width: 600px ){
+    .main-text>p{
+        margin: 1rem 5rem;
+    }
+
+    #container-initial2 .big-number{
+        font-size: 5rem;
+    }
+    
+    #container-initial2 .small-text-block{
+        font-size: 1.5rem ;
+    }
+
+
+}
+
+@media only screen and ( min-width:768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .main-text>p{
+        margin: 1rem 5rem;
+    }
+
+    #container-initial2 img{
+        width: 3rem;
+    }
+    
+    #container-initial2 .big-number{
+        font-size: 6.5rem;
+    }
+    
+    #container-initial2 .small-text-block{
+        font-size: 1.8rem ;
+    }    
+}
+
+@media only screen and ( min-width:992px){
+    h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #container-initial1{
+        justify-content: center;
+        text-align: center;
+        margin: 5rem 1rem
+    }
+
+    .main-text>p{
+        color: var(--very-dark-cyan);
+        font-size: .8rem;
+    }
+
+    .botton-rosa{
+        margin-top: 3rem;
+        font-size: .9rem;
+        padding: 1.1rem 4.5rem;
+    }
+    .botton-rosa:hover{
+        cursor: pointer;
+        border: 3px solid var(--pink)
+    }
+
+    .initial-image{
+        width: 85%;
+        margin-left: 9rem;
+        margin-bottom: 7.5rem;
+    }
+
+    #container-initial2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .second-block{
+        margin-top: -.9rem;
+    }
+
+    #container-initial2 img{
+        width: 2rem;
+    }
+
+    #container-initial2 .big-number{
+        font-size: 4.1rem;
+    }
+
+    #container-initial2 .small-text-block{
+        font-size: 1rem;
+    }
+
+
+
+}
+
+@media only screen and ( min-width:1200px){
+    .main-text>p{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and ( min-width:1440px){
+    h1{
+        font-size: 3rem;
+    }
+
+    .main-text>p{
+        font-size: 1.3rem;
+        margin: 0 23rem;
+    }
+
+    .main-text{
+        font-size: 1rem;
+    }
+
+    .botton-rosa{
+        font-size: 1.2rem;
+        padding: 1.6rem 6.5rem;
+    }
+
+    .initial-image{
+        width: 85%;
+    }
+
+    #container-initial2 img{
+        width: 3rem;
+    }
+
+    #container-initial2 .big-number{
+        font-size: 5.5rem;
+    }
+
+    #container-initial2 .small-text-block{
+        font-size: 1.5rem;
+    }
+
+
+} 
