@@ -14,6 +14,14 @@
 *{
     padding: 0;
     margin: 0;
+
+    
+}
+
+*,
+*::after,
+*::before{
+
     box-sizing: border-box;
 }
 
@@ -22,12 +30,17 @@ body{
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: .9rem;
+    
 }
 
 h1,
+
 h2{
     font-family: 'Poppins';
     text-align: center;
+    text-transform: capitalize;
+    color: var(--very-dark-cyan);
+    color: white;
 }
 
 .flex{display: flex;}
@@ -74,6 +87,7 @@ h1{
     font-weight: 700;
     color: var(--very-dark-cyan)
 
+
 }
 
 .main-text>p{
@@ -104,79 +118,78 @@ h1{
     margin-top:  3.5rem;
 }
 
-#container-initial2 img{
-    width: 2rem;
+p{
+    
+    color: white;
+}
+.gg{
+    width: 100%;
+    
+}
+.partefinal{
+    background-color:  hsl(192, 100%, 9%);;
+    color: white;
+    
+}
+#primerbloque{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    
 }
 
-#container-initial2 .big-number{
-    font-size: 3.5rem;
-    font-weight: 800;
+.primertexto{
+    padding-top: 1rem;
+    text-align: left;
+    
+}
+.forms{
+   
+    width: 95%;
+    height: 30px;
+}
+.cajatotal{
+    padding-top: 1rem;
+}
+.cajaformulario{
+    padding-bottom: 1rem;
+}
+.formulario{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+        
+}
+.sus{
+    width: 40%;
+    height: 35px;
+}
+.botones{
+    background-color: violet;
+    width: 40%;
+    height: 30px;
+    
+}
+.cajaboton{
+    text-align: right;
+    padding-right: 1rem;
+}
+#segundobloque{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    padding-right: 0.2rem;
+   
 }
 
-#container-initial2 .small-text-block{
-    font-size: 1rem ;
-    color: var(--very-dark-cyan);
-    padding-top: .3rem;
-    padding-left: 1rem;
-    opacity: .8;
+.logo{
+    float: left;
+    padding-top: 0.8rem;
 }
-
-.first-block{
-    margin-bottom: 3rem;
-}
-
-.second-block{
-    margin: 2.5rem 0;
-    padding-bottom: 5rem;
-}
-
-.stats{
-    background :url('../images/bg-section-top-mobile-1.svg') no-repeat bottom;
-    background-size: contain;
-}
-
-/*PANEL1*/
-.grow{
-    flex-direction: column;
-    padding-top: 5rem;
-    background-color: #F6FBFF;
-}
-
-.grow>img{
-    background-color: #fff;
-}
-
-.grow>div>img,
-.flowing>div>img{
-    width:80%;
-    position: relative;
-    left: 10%;
-}
-
-.grow>div,
-.flowing>div{
-    position:relative;
-    top: 5%;
-}
-
-.flowing{
-    flex-direction: column;
-    background-color: #fff;
-    background-image: url('../images/bg-section-bottom-mobile-1.svg') no-repeat top;
-    background-size: contain;
-}
-
-.content>h2,
-.content>h2{
-    padding: 2rem;
-}
-
-.content>p,
-.content>p{
-    width: 80%;
-    text-align: center;
-    position: relative;
-    left: 10%;
+.segundotitulo{
+    display: inline-block;
+    vertical-align: middle;
+  font-size: 40px;
+    padding-left: 0.5rem;
 }
 
 
@@ -243,11 +256,41 @@ h1{
     #container-initial2 .big-number{
         font-size: 6.5rem;
     }
+
     
-    #container-initial2 .small-text-block{
-        font-size: 1.8rem ;
-    }    
+    
+
+.segundotexto{
+    text-align: left;   
 }
+.phone{
+    float: left;
+    padding-top: 0.2rem;
+}
+.numero{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+.email{
+    float: left;
+    padding-top: 0.2rem;
+}
+.correo{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.6rem;
+}
+.primer{
+    padding-top: 2.5rem;
+}
+.segundo{
+    padding-top: 1rem;
+}
+.redes{
+    padding-left: 2rem;
+    display: flex; 
+  }
 
 @media only screen and ( min-width:992px){
     nav{
@@ -274,93 +317,201 @@ h1{
         margin-bottom: 2rem;
     }
     
-    #container-initial1{
-        justify-content: center;
-        text-align: center;
-        margin: 5rem 1rem
+.facebook{
+    width: 32px;
+}
+.inst{
+    padding-left: 1rem;
+    width: 47px;
+}
+.twiter{
+    padding-left: 1rem;
+    width: 47px;
+}
+@media screen and (min-width: 775px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
-    .main-text>p{
-        color: var(--very-dark-cyan);
-        font-size: .8rem;
+    .partefinal{
+        padding-bottom: 5rem;
     }
-
-    .botton-rosa{
-        margin-top: 3rem;
-        font-size: .9rem;
-        padding: 1.1rem 4.5rem;
-    }
-    .botton-rosa:hover{
-        cursor: pointer;
-        border: 3px solid var(--pink)
-    }
-
-    .initial-image{
-        width: 85%;
-        margin-left: 9rem;
-        margin-bottom: 7.5rem;
-    }
-
-    #container-initial2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .second-block{
-        margin-top: -.9rem;
-    }
-
-    #container-initial2 img{
-        width: 2rem;
-    }
-
-    #container-initial2 .big-number{
-        font-size: 4.1rem;
-    }
-
-    #container-initial2 .small-text-block{
-        font-size: 1rem;
-    }
-
-    .stats{
-        background :url('../images/bg-section-top-desktop-1.svg') no-repeat bottom;
-        background-size: contain;
-    }
-
-    .grow{
-        margin-top: 0%;
-    }
-
-    .grow>div{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        width: 80%;
-        left: 10%;
+    #primerbloque{
+        float: right; 
+        font-size: 9px; 
+        padding-top: 5rem;
+        padding-right: 10rem;
+        
+        
         
     }
-
-    .flowing>div{
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        left: 10%;
+    .primertexto{
+        text-align: left;    
+        padding-top: 1.5rem;
+     }
+     .cajatotal{
+         padding-top: 1.5rem;
+     }
+    .cajaformulario{
+        float: left;;
+    }
+    .cajaboton{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .botones{
+        width: 130%;
+        color: white;
     }
 
-    .grow>div>img,
-    .flowing>div>img{
-        width: 40%;
-        left: auto;
+    #segundobloque{
+        padding-left: 6.6rem;
     }
+    .segundotexto{
+        font-size: 9px;
+        padding-top: 1rem;
+        padding-left: 2.6rem;
 
-
-    .content{
-        font-size: 16px;
-        align-self: center;
     }
-
+    .segundotitulo{
+        font-size: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top:1rem ;
+        
+    }
+    .logo{
+       float: left;
+       width: 80px;
+       padding-top: 1.5rem; 
+       padding-left: 3rem;
+    }
+    .primer{
+        padding-left: 2.8rem;
+        padding-top: 1rem;
+       
+    }
+    .phone{
+        width: 10px;
+        
+        
+    }
+    .numero{
+        font-size: 9px;
+       
+       
+    }
+    .segundo{
+        padding-left:2.7rem;
+        padding-top: 0.5rem;
+    }
+    .email{
+        width: 10px;
+        float: left;
+        
+        
+    }
+    .correo{
+        font-size: 9px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 0.2rem;
+        padding-left: 1rem;
+    }
+   .redes{
+       padding-left: 9rem;
+       padding-bottom: 6rem;
+   }
+   .facebook{
+       width: 20px;
+   }
+   .inst{
+       width: 38px;
+   }
+   .twiter{
+       width: 38px;
+   }
 }
+@media screen and (min-width: 1100px){
+ #primerbloque{
+     font-size: 15px; 
+     padding-bottom: 1rem;
+     padding-right: 6rem;
+ }
+ .titlenuevo{
+     padding-top: 1rem;
+ }
+ .cajatotal{
+     display: flex;
+ }
+ .cajaformulario{
+     float: left;
+ }
+ .forms{
+     width: 25vw;
+ }
+ .cajaboton{
+    padding-left: 2rem;
+ }
+.botones{
+    display: inline-block;
+    vertical-align: middle;
+    width: 7vw;
+}
+#segundobloque{
+    
+}
+.titulo{
+    padding-top: 0.7rem; 
+}
+.segundotitulo{
+    padding-left: 2rem;
+}
+.logouno{
+    padding-top: 1rem;
+    width: 60px;
+    padding-left: 1rem;
+}
+.segundotexto{
+    font-size: 15px;
+    padding-left: 4rem;
+}
+.segundotitulo{
+    font-size: 40px;
+}
+.primer{
+    padding-left: 4rem;
+}
+.phone{
+    width: 15px;
+}
+.numero{
+    font-size: 12px;
+}
+.email{
+    width: 15px;
+}
+.correo{
+    font-size: 12px;
+    padding-bottom: 1rem;
+}
+.segundo{
+    padding-left: 4rem;
+}
+.redes{
+    padding-left: 10.3rem;
+}
+.facebook{
+    width: 30px;
+}
+.inst{
+    width: 48px;
+}
+.twiter{
+    width: 48px;
+}
+
 
 @media only screen and ( min-width:1200px){
     .main-text>p{
@@ -432,5 +583,4 @@ h1{
 
 
 } 
-
 
