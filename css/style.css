@@ -30,10 +30,34 @@ h2{
     text-align: center;
 }
 
-
-
 .flex{display: flex;}
 .container{height: var(--window-size);}
+
+/* Inicio de Nav */
+
+nav{
+    display: flex;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+}
+
+.image-nav{
+    width: 6rem;
+}
+
+nav>div>.button-nav{
+    margin-top: -0.3rem;
+    font-family:'Open Sans', sans-serif;
+    font-size: .6rem;
+    list-style: none;
+    padding: .3rem 1.1rem;
+    border: 1.5px solid var(--light-pink);
+    border-radius: 25px;
+    color: var(--light-pink);
+    -webkit-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+    -moz-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+    box-shadow: 0px 0px 10px -8px rgba(237,29,237,1);
+}
 
 /* Inicio de la rama INICIO */
 
@@ -158,6 +182,22 @@ h1{
 
  /* INICIO RESPONSIV */
 @media only screen and ( min-width: 600px ){
+    nav{
+        padding: 3rem 3rem;
+    }
+    
+    .image-nav{
+        width: 11rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.2rem;
+        padding: .4rem 1.7rem;
+        -webkit-box-shadow: 0px 0px 19px -8px rgba(237,29,237,1);
+        -moz-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+         box-shadow: 0px 0px 13px -8px rgba(237,29,237,1);
+    }
+
     .main-text>p{
         margin: 1rem 5rem;
     }
@@ -175,6 +215,20 @@ h1{
 }
 
 @media only screen and ( min-width:768px){
+    nav{
+        padding: 3.5rem 3.5rem;
+    }
+    
+    .image-nav{
+        width: 12.5rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.3rem;
+        padding: .5rem 1.9rem;
+       
+    }
+
     h1{
         font-size: 1.5rem;
     }
@@ -196,6 +250,25 @@ h1{
 }
 
 @media only screen and ( min-width:992px){
+    nav{
+        padding: 4.5rem 3.5rem;
+    }
+    
+    .image-nav{
+        width: 11rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: .8rem;
+        padding: .3rem 1.5rem;
+        border-radius: 60px;
+    }
+
+    nav>div>.button-nav:hover{
+        cursor:pointer;
+        border: 2px solid rgba(237,29,237,1);
+    }
+
     h1{
         font-size: 2rem;
         margin-bottom: 2rem;
@@ -293,9 +366,36 @@ h1{
     .main-text>p{
         font-size: 1.3rem;
     }
+
+    nav{
+        padding: 5.5rem 5rem;
+    }
+    
+    .image-nav{
+        width: 13.5rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.1rem;
+        padding: .5rem 1.9rem;
+    }
+
 }
 
 @media only screen and ( min-width:1440px){
+    nav{
+        padding: 5.5rem 5rem;
+    }
+    
+    .image-nav{
+        width: 15.5rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.2rem;
+        padding: .5rem 1.9rem;
+    }
+    
     h1{
         font-size: 3rem;
     }
