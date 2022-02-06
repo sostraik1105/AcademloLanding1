@@ -8,7 +8,7 @@
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-blue: hsl(207, 100%, 98%);
 
-    --window-size: calc(100vh - 80px);
+    --window-size: calc(90vh - 80px);
 }
 
 *{
@@ -24,6 +24,17 @@ body{
     font-size: .9rem;
 }
 
+h1,
+h2{
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+
+
+.flex{display: flex;}
+.container{height: var(--window-size);}
+
 /* Inicio de la rama INICIO */
 
 #container-initial1{
@@ -36,7 +47,6 @@ body{
 }
 
 h1{
-    font-family: 'Poppins';
     font-weight: 700;
     color: var(--very-dark-cyan)
 
@@ -67,7 +77,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:  3.5rem 0;
+    margin-top:  3.5rem;
 }
 
 #container-initial2 img{
@@ -93,7 +103,58 @@ h1{
 
 .second-block{
     margin: 2.5rem 0;
+    padding-bottom: 5rem;
 }
+
+.stats{
+    background :url('../images/bg-section-top-mobile-1.svg') no-repeat bottom;
+    background-size: contain;
+}
+
+/*PANEL1*/
+.grow{
+    flex-direction: column;
+    padding-top: 5rem;
+    background-color: #F6FBFF;
+}
+
+.grow>img{
+    background-color: #fff;
+}
+
+.grow>div>img,
+.flowing>div>img{
+    width:80%;
+    position: relative;
+    left: 10%;
+}
+
+.grow>div,
+.flowing>div{
+    position:relative;
+    top: 5%;
+}
+
+.flowing{
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url('../images/bg-section-bottom-mobile-1.svg') no-repeat top;
+    background-size: contain;
+}
+
+.content>h2,
+.content>h2{
+    padding: 2rem;
+}
+
+.content>p,
+.content>p{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    left: 10%;
+}
+
 
  /* INICIO RESPONSIV */
 @media only screen and ( min-width: 600px ){
@@ -108,6 +169,7 @@ h1{
     #container-initial2 .small-text-block{
         font-size: 1.5rem ;
     }
+
 
 
 }
@@ -188,7 +250,42 @@ h1{
         font-size: 1rem;
     }
 
+    .stats{
+        background :url('../images/bg-section-top-desktop-1.svg') no-repeat bottom;
+        background-size: contain;
+    }
 
+    .grow{
+        margin-top: 0%;
+    }
+
+    .grow>div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 80%;
+        left: 10%;
+        
+    }
+
+    .flowing>div{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        left: 10%;
+    }
+
+    .grow>div>img,
+    .flowing>div>img{
+        width: 40%;
+        left: auto;
+    }
+
+
+    .content{
+        font-size: 16px;
+        align-self: center;
+    }
 
 }
 
@@ -235,3 +332,5 @@ h1{
 
 
 } 
+
+
