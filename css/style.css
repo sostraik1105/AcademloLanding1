@@ -291,6 +291,7 @@ p{
     padding-left: 2rem;
     display: flex; 
   }
+}
 
 @media only screen and ( min-width:992px){
     nav{
@@ -317,9 +318,9 @@ p{
         margin-bottom: 2rem;
     }
     
-.facebook{
-    width: 32px;
-}
+    .facebook{
+        width: 32px;
+    }
 .inst{
     padding-left: 1rem;
     width: 47px;
@@ -327,6 +328,7 @@ p{
 .twiter{
     padding-left: 1rem;
     width: 47px;
+}
 }
 @media screen and (min-width: 775px){
     *{
@@ -459,9 +461,7 @@ p{
     vertical-align: middle;
     width: 7vw;
 }
-#segundobloque{
-    
-}
+
 .titulo{
     padding-top: 0.7rem; 
 }
@@ -510,6 +510,7 @@ p{
 }
 .twiter{
     width: 48px;
+}
 }
 
 
@@ -580,7 +581,4 @@ p{
     #container-initial2 .small-text-block{
         font-size: 1.5rem;
     }
-
-
-} 
-
+}
