@@ -334,8 +334,12 @@ h1{
         justify-content: space-evenly;
     }
 
+    .first-block{
+        margin-top: -5rem;
+    }
+
     .second-block{
-        margin-top: -.9rem;
+        margin-top: -1rem;
     }
 
     #container-initial2 img{
