@@ -13,6 +13,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 *,
@@ -25,14 +26,15 @@ body{
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: .9rem;
+    
 }
 
 h1,
 h2 {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
-    text-align: center;
-    color: var(--very-dark-cyan)
+    color: var(--very-dark-cyan);
+    color: white;
 }
 
 a{
@@ -50,5 +52,302 @@ img{
 }
 
 p{
-    color: var(--very-dark-cyan);
+    
+    color: white;
+}
+.gg{
+    width: 100%;
+    
+}
+.partefinal{
+    background-color:  hsl(192, 100%, 9%);;
+    color: white;
+    
+}
+#primerbloque{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    
+}
+
+.primertexto{
+    padding-top: 1rem;
+    text-align: left;
+    
+}
+.forms{
+   
+    width: 95%;
+    height: 30px;
+}
+.cajatotal{
+    padding-top: 1rem;
+}
+.cajaformulario{
+    padding-bottom: 1rem;
+}
+.formulario{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+        
+}
+.sus{
+    width: 40%;
+    height: 35px;
+}
+.botones{
+    background-color: violet;
+    width: 40%;
+    height: 30px;
+    
+}
+.cajaboton{
+    text-align: right;
+    padding-right: 1rem;
+}
+#segundobloque{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    padding-right: 0.2rem;
+   
+}
+.logo{
+    float: left;
+    padding-top: 0.8rem;
+}
+.segundotitulo{
+    display: inline-block;
+    vertical-align: middle;
+    
+    font-size: 40px;
+    padding-left: 0.5rem;
+}
+.segundotexto{
+    text-align: left;   
+}
+.phone{
+    float: left;
+    padding-top: 0.2rem;
+}
+.numero{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+.email{
+    float: left;
+    padding-top: 0.2rem;
+}
+.correo{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.6rem;
+}
+.primer{
+    padding-top: 2.5rem;
+}
+.segundo{
+    padding-top: 1rem;
+}
+.redes{
+    padding-left: 2rem;
+    display: flex; 
+    
+}
+.facebook{
+    width: 32px;
+}
+.inst{
+    padding-left: 1rem;
+    width: 47px;
+}
+.twiter{
+    padding-left: 1rem;
+    width: 47px;
+}
+@media screen and (min-width: 775px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .partefinal{
+        padding-bottom: 5rem;
+    }
+    #primerbloque{
+        float: right; 
+        font-size: 9px; 
+        padding-top: 5rem;
+        padding-right: 10rem;
+        
+        
+        
+    }
+    .primertexto{
+        text-align: left;    
+        padding-top: 1.5rem;
+     }
+     .cajatotal{
+         padding-top: 1.5rem;
+     }
+    .cajaformulario{
+        float: left;;
+    }
+    .cajaboton{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .botones{
+        width: 130%;
+        color: white;
+    }
+
+    #segundobloque{
+        padding-left: 6.6rem;
+    }
+    .segundotexto{
+        font-size: 9px;
+        padding-top: 1rem;
+        padding-left: 2.6rem;
+
+    }
+    .segundotitulo{
+        font-size: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top:1rem ;
+        
+    }
+    .logo{
+       float: left;
+       width: 80px;
+       padding-top: 1.5rem; 
+       padding-left: 3rem;
+    }
+    .primer{
+        padding-left: 2.8rem;
+        padding-top: 1rem;
+       
+    }
+    .phone{
+        width: 10px;
+        
+        
+    }
+    .numero{
+        font-size: 9px;
+       
+       
+    }
+    .segundo{
+        padding-left:2.7rem;
+        padding-top: 0.5rem;
+    }
+    .email{
+        width: 10px;
+        float: left;
+        
+        
+    }
+    .correo{
+        font-size: 9px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 0.2rem;
+        padding-left: 1rem;
+    }
+   .redes{
+       padding-left: 9rem;
+       padding-bottom: 6rem;
+   }
+   .facebook{
+       width: 20px;
+   }
+   .inst{
+       width: 38px;
+   }
+   .twiter{
+       width: 38px;
+   }
+}
+@media screen and (min-width: 1100px){
+ #primerbloque{
+     font-size: 15px; 
+     padding-bottom: 1rem;
+     padding-right: 6rem;
+ }
+ .titlenuevo{
+     padding-top: 1rem;
+ }
+ .cajatotal{
+     display: flex;
+ }
+ .cajaformulario{
+     float: left;
+ }
+ .forms{
+     width: 25vw;
+ }
+ .cajaboton{
+    padding-left: 2rem;
+ }
+.botones{
+    display: inline-block;
+    vertical-align: middle;
+    width: 7vw;
+}
+#segundobloque{
+    
+}
+.titulo{
+    padding-top: 0.7rem; 
+}
+.segundotitulo{
+    padding-left: 2rem;
+}
+.logouno{
+    padding-top: 1rem;
+    width: 60px;
+    padding-left: 1rem;
+}
+.segundotexto{
+    font-size: 15px;
+    padding-left: 4rem;
+}
+.segundotitulo{
+    font-size: 40px;
+}
+.primer{
+    padding-left: 4rem;
+}
+.phone{
+    width: 15px;
+}
+.numero{
+    font-size: 12px;
+}
+.email{
+    width: 15px;
+}
+.correo{
+    font-size: 12px;
+    padding-bottom: 1rem;
+}
+.segundo{
+    padding-left: 4rem;
+}
+.redes{
+    padding-left: 10.3rem;
+}
+.facebook{
+    width: 30px;
+}
+.inst{
+    width: 48px;
+}
+.twiter{
+    width: 48px;
+}
 }
