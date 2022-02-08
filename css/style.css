@@ -14,7 +14,6 @@
 *{
     padding: 0;
     margin: 0;
-    
 }
 
 *,
@@ -28,15 +27,89 @@ body{
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: .9rem;
-    
 }
 
 h1,
-h2 {
+
+h2{
     font-family: 'Poppins', sans-serif;
+    text-align: center;
     text-transform: capitalize;
     color: var(--very-dark-cyan);
     color: white;
+}
+
+.flex{display: flex;}
+.container{height: var(--window-size);}
+
+/* Inicio de Nav */
+
+nav{
+    display: flex;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+}
+
+.image-nav{
+    width: 6rem;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+ul>li{
+    list-style: none;
+    padding: .5rem 2rem;
+    border: 2px solid pink;
+    border-radius: 25px;
+    color: pink;
+    margin-left: 1rem;
+    -webkit-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+    -moz-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+    box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+}
+
+ul>li:hover{
+    cursor:pointer;
+    opacity:0.8;
+}
+
+
+nav>ul>li{
+    display: inline-block;
+}
+
+nav>div>.button-nav{
+    margin-top: -0.3rem;
+    font-family:'Open Sans', sans-serif;
+    font-size: .6rem;
+    list-style: none;
+    padding: .3rem 1.1rem;
+    border: 1.5px solid var(--light-pink);
+    border-radius: 25px;
+    color: var(--light-pink);
+    -webkit-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+    -moz-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+    box-shadow: 0px 0px 10px -8px rgba(237,29,237,1);
+}
+
+/* Inicio de la rama INICIO */
+
+#container-initial1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin: 2.5rem 1.5rem;
+}
+
+h1{
+    font-weight: 700;
+    color: var(--very-dark-cyan)
+
 }
 
 .main-text>p{
@@ -67,303 +140,337 @@ h2 {
     margin-top:  3.5rem;
 }
 
-p{
-    
-    color: white;
-}
-.gg{
-    width: 100%;
-    
-}
-.partefinal{
-    background-color:  hsl(192, 100%, 9%);;
-    color: white;
-    
-}
-#primerbloque{
-    padding-top: 1rem;
-    padding-right: 1rem;
-    padding-left: 2rem;
-    
+#container-initial2 img{
+    width: 2rem;
 }
 
-.primertexto{
-    padding-top: 1rem;
-    text-align: left;
-    
+#container-initial2 .big-number{
+    font-size: 3.5rem;
+    font-weight: 800;
 }
-.forms{
-   
-    width: 95%;
-    height: 30px;
-}
-.cajatotal{
-    padding-top: 1rem;
-}
-.cajaformulario{
-    padding-bottom: 1rem;
-}
-.formulario{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-        
-}
-.sus{
-    width: 40%;
-    height: 35px;
-}
-.botones{
-    background-color: violet;
-    width: 40%;
-    height: 30px;
-    
-}
-.cajaboton{
-    text-align: right;
-    padding-right: 1rem;
-}
-#segundobloque{
-    padding-top: 3rem;
-    padding-left: 2rem;
-    padding-bottom: 3rem;
-    padding-right: 0.2rem;
-   
-}
-.logo{
-    float: left;
-    padding-top: 0.8rem;
-}
-.segundotitulo{
-    display: inline-block;
-    vertical-align: middle;
-    
-    font-size: 40px;
-    padding-left: 0.5rem;
-}
-.segundotexto{
-    text-align: left;   
-}
-.phone{
-    float: left;
-    padding-top: 0.2rem;
-}
-.numero{
-    display: inline-block;
-    vertical-align: middle;
+
+#container-initial2 .small-text-block{
+    font-size: 1rem ;
+    color: var(--very-dark-cyan);
+    padding-top: .3rem;
     padding-left: 1rem;
+    opacity: .8;
 }
-.email{
-    float: left;
-    padding-top: 0.2rem;
+
+.first-block{
+    margin-bottom: 3rem;
 }
-.correo{
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 0.6rem;
+
+.second-block{
+    margin: 2.5rem 0;
+    padding-bottom: 5rem;
 }
-.primer{
-    padding-top: 2.5rem;
+
+.stats{
+    background :url('../images/bg-section-top-mobile-1.svg') no-repeat bottom;
+    background-size: contain;
 }
-.segundo{
-    padding-top: 1rem;
+
+/*PANEL1*/
+.grow{
+    flex-direction: column;
+    padding-top: 5rem;
+    background-color: #F6FBFF;
 }
-.redes{
-    padding-left: 2rem;
-    display: flex; 
+
+.grow>img{
+    background-color: #fff;
+}
+
+.grow>div>img,
+.flowing>div>img{
+    width:80%;
+    position: relative;
+    left: 10%;
+}
+
+.grow>div,
+.flowing>div{
+    position:relative;
+    top: 5%;
+}
+
+.flowing{
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url('../images/bg-section-bottom-mobile-1.svg') no-repeat top;
+    background-size: contain;
+}
+
+.content>h2,
+.content>h2{
+    padding: 2rem;
+}
+
+.content>p,
+.content>p{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    left: 10%;
+}
+
+
+ /* INICIO RESPONSIV */
+@media only screen and ( min-width: 600px ){
+    nav{
+        padding: 3rem 3rem;
+    }
     
-}
-.facebook{
-    width: 32px;
-}
-.inst{
-    padding-left: 1rem;
-    width: 47px;
-}
-.twiter{
-    padding-left: 1rem;
-    width: 47px;
-}
-@media screen and (min-width: 775px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    .image-nav{
+        width: 11rem;
     }
-    .partefinal{
-        padding-bottom: 5rem;
-    }
-    #primerbloque{
-        float: right; 
-        font-size: 9px; 
-        padding-top: 5rem;
-        padding-right: 10rem;
-        
-        
-        
-    }
-    .primertexto{
-        text-align: left;    
-        padding-top: 1.5rem;
-     }
-     .cajatotal{
-         padding-top: 1.5rem;
-     }
-    .cajaformulario{
-        float: left;;
-    }
-    .cajaboton{
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .botones{
-        width: 130%;
-        color: white;
+    
+    nav>div>.button-nav{
+        font-size: 1.2rem;
+        padding: .4rem 1.7rem;
+        -webkit-box-shadow: 0px 0px 19px -8px rgba(237,29,237,1);
+        -moz-box-shadow: 0px 0px 17px -8px rgba(237,29,237,1);
+         box-shadow: 0px 0px 13px -8px rgba(237,29,237,1);
     }
 
-    #segundobloque{
-        padding-left: 6.6rem;
+    .main-text>p{
+        margin: 1rem 5rem;
     }
-    .segundotexto{
-        font-size: 9px;
-        padding-top: 1rem;
-        padding-left: 2.6rem;
 
+    #container-initial2 .big-number{
+        font-size: 5rem;
     }
-    .segundotitulo{
-        font-size: 30px;
-        display: inline-block;
-        vertical-align: middle;
-        padding-top:1rem ;
-        
-    }
-    .logo{
-       float: left;
-       width: 80px;
-       padding-top: 1.5rem; 
-       padding-left: 3rem;
-    }
-    .primer{
-        padding-left: 2.8rem;
-        padding-top: 1rem;
-       
-    }
-    .phone{
-        width: 10px;
-        
-        
-    }
-    .numero{
-        font-size: 9px;
-       
-       
-    }
-    .segundo{
-        padding-left:2.7rem;
-        padding-top: 0.5rem;
-    }
-    .email{
-        width: 10px;
-        float: left;
-        
-        
-    }
-    .correo{
-        font-size: 9px;
-        display: inline-block;
-        vertical-align: middle;
-        padding-top: 0.2rem;
-        padding-left: 1rem;
-    }
-   .redes{
-       padding-left: 9rem;
-       padding-bottom: 6rem;
-   }
-   .facebook{
-       width: 20px;
-   }
-   .inst{
-       width: 38px;
-   }
-   .twiter{
-       width: 38px;
-   }
-}
-@media screen and (min-width: 1100px){
- #primerbloque{
-     font-size: 15px; 
-     padding-bottom: 1rem;
-     padding-right: 6rem;
- }
- .titlenuevo{
-     padding-top: 1rem;
- }
- .cajatotal{
-     display: flex;
- }
- .cajaformulario{
-     float: left;
- }
- .forms{
-     width: 25vw;
- }
- .cajaboton{
-    padding-left: 2rem;
- }
-.botones{
-    display: inline-block;
-    vertical-align: middle;
-    width: 7vw;
-}
-#segundobloque{
     
+    #container-initial2 .small-text-block{
+        font-size: 1.5rem ;
+    }
+
+
+
 }
-.titulo{
-    padding-top: 0.7rem; 
+
+@media only screen and ( min-width:768px){
+    nav{
+        padding: 3.5rem 3.5rem;
+    }
+    
+    .image-nav{
+        width: 12.5rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.3rem;
+        padding: .5rem 1.9rem;
+       
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    .main-text>p{
+        margin: 1rem 5rem;
+    }
+
+    #container-initial2 img{
+        width: 3rem;
+    }
+    
+    #container-initial2 .big-number{
+        font-size: 6.5rem;
+    }
+    
+    #container-initial2 .small-text-block{
+        font-size: 1.8rem ;
+    }    
 }
-.segundotitulo{
-    padding-left: 2rem;
+
+@media only screen and ( min-width:992px){
+    nav{
+        padding: 4.5rem 3.5rem;
+    }
+    
+    .image-nav{
+        width: 11rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: .8rem;
+        padding: .3rem 1.5rem;
+        border-radius: 60px;
+    }
+
+    nav>div>.button-nav:hover{
+        cursor:pointer;
+        border: 2px solid rgba(237,29,237,1);
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #container-initial1{
+        justify-content: center;
+        text-align: center;
+        margin: 5rem 1rem
+    }
+
+    .main-text>p{
+        color: var(--very-dark-cyan);
+        font-size: .8rem;
+    }
+
+    .botton-rosa{
+        margin-top: 3rem;
+        font-size: .9rem;
+        padding: 1.1rem 4.5rem;
+    }
+    .botton-rosa:hover{
+        cursor: pointer;
+        border: 3px solid var(--pink)
+    }
+
+    .initial-image{
+        width: 85%;
+        margin-left: 9rem;
+        margin-bottom: 7.5rem;
+    }
+
+    #container-initial2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .first-block{
+        margin-top: -5rem;
+    }
+
+    .second-block{
+        margin-top: -1rem;
+    }
+
+    #container-initial2 img{
+        width: 2rem;
+    }
+
+    #container-initial2 .big-number{
+        font-size: 4.1rem;
+    }
+
+    #container-initial2 .small-text-block{
+        font-size: 1rem;
+    }
+
+    .stats{
+        background :url('../images/bg-section-top-desktop-1.svg') no-repeat bottom;
+        background-size: contain;
+    }
+
+    .grow{
+        margin-top: 0%;
+    }
+
+    .grow>div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 80%;
+        left: 10%;
+        
+    }
+
+    .flowing>div{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        left: 10%;
+    }
+
+    .grow>div>img,
+    .flowing>div>img{
+        width: 40%;
+        left: auto;
+    }
+
+
+    .content{
+        font-size: 16px;
+        align-self: center;
+    }
+
 }
-.logouno{
-    padding-top: 1rem;
-    width: 60px;
-    padding-left: 1rem;
+
+@media only screen and ( min-width:1200px){
+    .main-text>p{
+        font-size: 1.3rem;
+    }
+
+    nav{
+        padding: 5.5rem 5rem;
+    }
+    
+    .image-nav{
+        width: 13.5rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.1rem;
+        padding: .5rem 1.9rem;
+    }
+
 }
-.segundotexto{
-    font-size: 15px;
-    padding-left: 4rem;
-}
-.segundotitulo{
-    font-size: 40px;
-}
-.primer{
-    padding-left: 4rem;
-}
-.phone{
-    width: 15px;
-}
-.numero{
-    font-size: 12px;
-}
-.email{
-    width: 15px;
-}
-.correo{
-    font-size: 12px;
-    padding-bottom: 1rem;
-}
-.segundo{
-    padding-left: 4rem;
-}
-.redes{
-    padding-left: 10.3rem;
-}
-.facebook{
-    width: 30px;
-}
-.inst{
-    width: 48px;
-}
-.twiter{
-    width: 48px;
-}
-}
+
+@media only screen and ( min-width:1440px){
+    nav{
+        padding: 5.5rem 5rem;
+    }
+    
+    .image-nav{
+        width: 15.5rem;
+    }
+    
+    nav>div>.button-nav{
+        font-size: 1.2rem;
+        padding: .5rem 1.9rem;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+
+    .main-text>p{
+        font-size: 1.3rem;
+        margin: 0 23rem;
+    }
+
+    .main-text{
+        font-size: 1rem;
+    }
+
+    .botton-rosa{
+        font-size: 1.2rem;
+        padding: 1.6rem 6.5rem;
+    }
+
+    .initial-image{
+        width: 85%;
+    }
+
+    #container-initial2 img{
+        width: 3rem;
+    }
+
+    #container-initial2 .big-number{
+        font-size: 5.5rem;
+    }
+
+    #container-initial2 .small-text-block{
+        font-size: 1.5rem;
+    }
+
+
+} 
+
+
