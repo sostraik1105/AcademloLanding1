@@ -13,7 +13,7 @@
 
 *{
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
 *,
@@ -30,6 +30,7 @@ body{
 }
 
 h1,
+
 h2{
     font-family: 'Poppins', sans-serif;
     text-align: center;
